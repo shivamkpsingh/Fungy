@@ -1,0 +1,7 @@
+.upload__file{
+    width: 560px;
+    height: 230px;
+}
+.upload{
+    background:  linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 18%, rgba(0,212,255,1) 90%);
+}
