@@ -11,7 +11,7 @@ const Category = () => {
         <div className="flex flex-wrap">
           {data.map((props) => {
             return (
-              <div className="flex items-center mr-6 mt-5 " id={props.id}>
+              <div className="flex items-center mr-6 mt-5" key={props.id}>
                 <SvgIcon component={props.icon} className="text-gray-600" />
                 <h1 className="ml-2 text-gray-400">{props.title}</h1>
               </div>

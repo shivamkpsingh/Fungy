@@ -14,40 +14,50 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <div className="px-48">
-        <h1 className=" mt-20 text-4xl font-bold">Create Your Collection</h1>
-        <div className="flex">
-          <div className="">
+      <div className="px-4 lg:px-16 xl:px-48 ">
+        <h1 className="mt-20 text-xl lg:text-4xl  font-bold">Create Your Collection</h1>
+        <div className="flex flex-col lg:flex-row w-full">
+          <div className="w-full md:flex md:justify-between lg:flex-col  lg:w-2/5">
+          <div className="w-full md:w-1/2 lg:w-full">
             <UploadFile />
+          </div>
+          <div className="md:w-1/2 md:ml-4 lg:ml-0 lg:w-full">
             <UploadCover />
           </div>
-          <Preview />
+          </div>
+          <div className="w-full lg:w-1/2">
+            <Preview />
+          </div>
         </div>
         <div className="">
           <Category />
         </div>
         <div className="mt-10">
-          <h1 className="font-medium">Enter Price to allow user instantly purchase your NFT</h1>
+          <h1 className="font-medium">
+            Enter Price to allow user instantly purchase your NFT
+          </h1>
           <div className="flex">
-            <Nft
+          <Nft
               title="Fixed Price"
               IconStyle="text-blue-500"
               styleProp="border-blue-500"
               icon={LocalOfferIcon}
             />
-            <Nft
+          <Nft
               title="Timed Auction"
               IconStyle="text-black"
               styleProp="ml-5 border-black"
               icon={AccessTimeFilledIcon}
             />
+           
+            
           </div>
         </div>
         <div className="">
           <Price />
         </div>
         <div className="">
-        <Collection/>
+          <Collection />
         </div>
       </div>
     </div>

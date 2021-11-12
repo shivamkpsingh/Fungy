@@ -1,9 +1,12 @@
-.logo > .MuiSvgIcon-root{
-    font-size: 60px;
-}
+
 .notificaton .MuiSvgIcon-root{
     font-size: 40px;
 }
 .drop-down:hover .dropdown-content{
     display: block;
 }
+@media (min-width: 1280px) { 
+    .logo > .MuiSvgIcon-root{
+        font-size: 60px;
+    }
+ }

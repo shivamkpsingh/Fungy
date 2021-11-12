@@ -6,7 +6,7 @@ const Price = () => {
   return (
     <div className="mt-8 mb-10">
       <h1 className="font-medium">Price</h1>
-      <div className="price mt-5">
+      <div className="price mt-5 w-full lg:w-2/5">
         <div className="flex border-b border-black">
           <input
             type="text"

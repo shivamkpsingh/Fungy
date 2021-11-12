@@ -7,26 +7,28 @@ import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 
 const Collection = () => {
   return (
-    <div className="mb-16">
+    <div className="mb-10">
       <h1 className="text-2xl font-medium">Choose Collection</h1>
       <div className="">
         <div className="flex">
-          <Nft
+        <Nft
             title="Create"
             icon={AddCircleIcon}
             styleProp=" border-black"
             Ptitle="ERC-721"
           />
-          <Nft
+        <Nft
             title="Fungy"
             icon={PollIcon}
             styleProp="border-blue-500 ml-5"
             IconStyle="text-blue-500 transform rotate-45"
             Ptitle="Fungy"
           />
+        
+          
         </div>
       </div>
-      <div className="price">
+      <div className="price w-full lg:w-2/5">
         <div className="mt-10">
           <h1>Title</h1>
           <div className="flex border-b border-black mt-5">
@@ -68,16 +70,16 @@ const Collection = () => {
           <h1>
             Descrption <span className="text-gray-400">(Optional)</span>
           </h1>
-          <div className="flex  mt-5">
+          <div className="flex   mt-5 ">
             <input
               type="text"
               placeholder="e.g. Size"
-              className=" outline-none pb-3 border-b border-black"
+              className="w-1/2 outline-none pb-3 border-b border-black mr-2"
             />
             <input
               type="text"
               placeholder="e.g. M"
-              className="flex-1 outline-none pb-3 border-b border-black ml-5"
+              className="w-1/2 outline-none pb-3 border-b border-black"
             />
           </div>
         </div>
@@ -99,8 +101,8 @@ const Collection = () => {
         </div>
         <div className="mt-10 flex justify-between items-center">
             <CollectionModal title="CREATE ITEM"/>
-            <div className="flex">
-                <p className="font-medium mr-3 text-gray-500">Unsaved changes</p>
+            <div className="flex items-center">
+                <p className="font-medium mr-2 lg:mr-3 text-gray-500">Unsaved changes</p>
                  <HelpOutlineIcon/>
             </div>
         </div>
